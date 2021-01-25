@@ -32,11 +32,11 @@ result = list()
 result.append(contacts_list[0])
 
 for contact_1 in contacts_list[1:]:
-    for i1, contact_2 in enumerate(contacts_list[1:]):
+    for contact_2 in contacts_list[1:]:
         if contact_1[0] == contact_2[0]:
-            for i2, element in enumerate(contact_2):
+            for i, element in enumerate(contact_2):
                 if element not in contact_1:
-                    contact_1[i2] = element
+                    contact_1[i] = element
     if contact_1 not in result:
         result.append(contact_1)
 
