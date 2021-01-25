@@ -15,7 +15,6 @@ with open('phonebook_raw.csv', encoding='utf-8') as f:
 tel_pattern = re.compile('(\+7|8)?\s*\(?(\d{3})\)?[-\s]*(\d{3})[-\s]?(\d{2})[-\s]?(\d{2})[-\s]?\(?(доб\.)?\s*(\d{4})?\)?')
 name_pattern = re.compile('^(\w+)[,\s]?(\w+)[\s]?(\w+)?')
 
-full_names_list = list()
 
 for contact in contacts_list[1:]:
     tel = contact[5]
