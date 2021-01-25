@@ -37,6 +37,8 @@ for contact_1 in contacts_list[1:]:
             for i, element in enumerate(contact_2):
                 if element not in contact_1:
                     contact_1[i] = element
+    if len(contact_1) > 7:
+        del(contact_1[7:])
     if contact_1 not in result:
         result.append(contact_1)
 
